@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f1de;
+    color: #3d405b;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@font-face {
+    font-family: 'Deberlinerins';
+    src: url('../fuentes/tt_berlinerins/TT\ Berlinerins\ Trial\ Grotesk.otf');
+}
+@media screen and (min-width:980px){
+    #contenedor{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "header header header header"
+                             "nav nav nav nav"
+                             "aside main main main"
+                             "footer footer footer footer";
+    }    
+}
+@media  screen and (max-width:500px) {
+    #contenedor{
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-areas: "header"
+                             "nav"
+                             "main"
+                             "aside"
+                             "footer"  ;
+    }
+    nav ul{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .img div{
+        display: flex;
+        flex-direction: column;
+    }
+    .img div img{
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    main.principal{
+        flex-direction: column;
+    }
+    main.principal img{
+         width:100%;
+    }
+    
+}
+header{
+    grid-area: header;
+    text-align: center;
+    background-image: url("../imagenes/iafinal3.png");
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: right;
+    padding: 7rem;
+}
+header h1{
+    width: fit-content;
+    font-family: 'Deberlinerins';
+    font-size:4rem;
+}
+nav{
+    grid-area: nav;
+}
+aside{
+    height: fit-content;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+ul{
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    background-color: #f2cc8f;
+    font-weight: bolder;
+    font-size: large;
+}
+nav ul{
+    display:flex;
+    justify-content: space-around;
+}
+nav li{
+    display: flexbox;
+    border: 2px solid #f2cc8f;
+    border-radius: 1rem;
+    padding: 0.8rem;
+    margin: 0.5rem;
+    background-color: #f2cc8f;
+}
+aside h3{
+    color: #e07a5f;
+    margin-bottom: 0.8rem;
+}
+aside li{
+    padding: 0.3rem;
+}
+aside article{
+    border: 1px solid #f2cc8f;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin: 0.8rem;
+}
+main.principal img{
+    border-radius: 1.5rem;
+    width: 70%;
+    margin-left: 15%;
+}
+main h2{
+    color: #e07a5f;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+main.principal{
+    display: flex;
+}
+main.principal article{
+    border: 1px solid #f2cc8f;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+img.icono{
+    width: 45px;
+    margin: 0.3rem;
+}
+#secundaria{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+#secundaria article{
+    text-align: center;
+    
+}
+#secundaria h2{
+    margin: 2rem;
+}
+.img{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+.img img{
+    width: 45%;
+    border-radius: 1rem;
+}
+footer{
+    display: flex;
+    justify-content:space-evenly;
+    padding: 1rem;
+}
+form{
+    margin: 1rem;
+}
+form fieldset{
+    padding: 1rem;
+}
+form p{
+    padding: 0.5rem;
+}

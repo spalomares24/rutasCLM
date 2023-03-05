@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Formulario información adicional</title>
+</head>
+<body>
+    <header id="formulario">
+        <h1>En moto por Castilla la Mancha</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../rutas/ayna.html">Ayna</a></li>
+            <li><a href="../rutas/cuervo.html">Nacimiento Río Cuervo</a></li>
+            <li><a href="formulario">Formulario</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Información adicional</h2>
+        <form action="">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <p><label for="nombre">Nombre </label><input type="text" name="nombre" id="nombre" maxlength="90" required/></p>
+                <p><label for="apellidos">Apellidos </label><input type="text" name="apellidos" id="apellidos" maxlength="90" required/></p>
+                <p><label for="correo">Correo </label><input type="email" name="correo" id="correo"/></p>
+                <p><label for="tlf">Teléfono </label><input type="tel" name="tlf" id="tlf"></p> 
+            </fieldset>
+            <fieldset>
+                <legend>Dirección</legend>
+                <p><label for="direccion">Dirección </label><input type="text" name="direccion" id="direccion" maxlength="90"/></p>
+                <p><label for="poblacion">Población </label><input type="text" name="poblacion" id="poblacion" maxlength="90"/></p>
+                <p><label for="cp">Codigo postal </label><input type="number" name="cp" id="cp" maxlength="5" required/></p>
+            </fieldset>
+            <fieldset>
+                <legend>Ruta de la que deseas más información</legend>
+                <input type="checkbox" name="ruta" value="ayna" id="ayna" checked><label for="ayna">Ayna</label>
+            <input type="checkbox" name="ruta" value="cuervo" id="cuervo"><label for="cuervo">Nacimiento rio Cuervo</label>
+            </fieldset>
+            <p><label for="consultas">Consultas: </label><textarea name="consultas" id="consultas" cols="40" rows="5"></textarea></p>
+            <p><input type="submit" value="Enviar"/> <input type="reset" value="Borrar datos"/></p>
+        </form>
+    </main>
+    <footer>
+        <p>Página realizada por Sara Palomares Flores</p>
+        <p><a href="https://www.iesjuanbosco.es/">IES Juan Bosco</a></p>
+    </footer>
+    
+</body>
+</html>
